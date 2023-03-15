@@ -1,0 +1,19 @@
+name: manual
+on:
+  workflow_dispatch:
+    inputs:
+      Name:
+        description: Employee Name
+        required: true
+      DOB:   
+        description: DOB
+        required: true
+      Age:
+        description: Age
+        required: false
+jobs:
+   test:
+     runs-on: ubuntu-latest
+     steps: 
+       - name: Get Code
+         uses: actions/checkout@v3
