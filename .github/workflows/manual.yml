@@ -11,6 +11,7 @@ on:
       Age:
         description: Age
         required: false
+      <Rest of the inputs>:  
 jobs:
    test:
      runs-on: ubuntu-latest
