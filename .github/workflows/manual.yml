@@ -17,3 +17,9 @@ jobs:
      steps: 
        - name: Get Code
          uses: actions/checkout@v3
+       - name: say somthing
+         run: echo "Hi, I have been manually triggered!!"
+       - run: |
+           echo "Name: ${{ github.event.inputs.Name }}"
+           echo "DOB: ${{ github.event.inputs.DOB }}"
+           echo "Age: ${{ github.event.inputs.Age }}"
